@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <div className="bg-[#141414] min-h-screen">
+      <Sidebar />
+    </div>
+  );
 }
 
-export default App
+export default App;
