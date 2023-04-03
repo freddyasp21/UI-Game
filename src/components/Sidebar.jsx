@@ -22,7 +22,7 @@ function Sidebar() {
   return (
     // Contenedor padre
     <div
-      className={`fixed top-0 w-80 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between bg-[#141414] transition-all ${
+      className={`fixed top-0 w-80 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between bg-[#141414] transition-all lg:left-0 ${
         showMenu ? "left-0" : "-left-full"
       }`}
     >
@@ -88,7 +88,7 @@ function Sidebar() {
       {/* Btn menu movil */}
       <button
         onClick={toggleMenu}
-        className="text-white bg-blue-600 fixed bottom-8 right-5 p-2 text-lg rounded-full"
+        className="lg:hidden text-white bg-blue-600 fixed bottom-8 right-5 p-2 text-lg rounded-full"
       >
         {showMenu ? <RiCloseLine /> : <RiMenuFill />}
       </button>
