@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   RiHome3Line,
   RiStore3Line,
@@ -7,13 +8,24 @@ import {
   RiLiveLine,
   RiDownload2Line,
   RiSettings3Line,
-  RiLogoutCircleLine,
+  RiCheckboxBlankCircleFill,
+  RiMenuFill,
+  RiCloseLine,
 } from "react-icons/ri";
 
 function Sidebar() {
+  const [showMenu, setShowMenu] = useState(true);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     // Contenedor padre
-    <div className="fixed left-0 top-0 w-80 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between">
+    <div
+      className={`fixed top-0 w-80 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between bg-[#141414] transition-all ${
+        showMenu ? "left-0" : "-left-full"
+      }`}
+    >
       {/* Contenedor superior del sidebar */}
       <div className="">
         {/* Logo */}
@@ -53,7 +65,7 @@ function Sidebar() {
         <ul className="text-gray-100 text-xl">
           <li>
             <a className="flex items-center gap-4 hover:bg-[#232323] hover:cursor-pointer py-3 px-4 rounded-xl transition-colors">
-              <RiDownload2Line /> Download
+              <RiDownload2Line /> Downloads
             </a>
           </li>
           <li>
@@ -62,12 +74,24 @@ function Sidebar() {
             </a>
           </li>
           <li>
-            <a className="flex items-center gap-4 hover:bg-[#232323] hover:cursor-pointer py-3 px-4 rounded-xl transition-colors">
-              <RiLogoutCircleLine /> Log Out
+            <a className="flex items-center gap-4 hover:bg-[#232323] hover:cursor-pointer py-3 px-4 rounded-xl transition-colors relative">
+              <img
+                src="https://img.freepik.com/foto-gratis/chico-amable-positivo-teniendo-idea_74855-3630.jpg?w=900&t=st=1680555462~exp=1680556062~hmac=0e012225148d4f822803a28d45a0e630c0b8c6adf274ac7c50eb8b5cc598ad6d"
+                className="w-6 h-6 object-cover rounded-full"
+              />
+              <RiCheckboxBlankCircleFill className="absolute text-green-600 bottom-3 left-8 text-[10px]" />
+              UserName
             </a>
           </li>
         </ul>
       </div>
+      {/* Btn menu movil */}
+      <button
+        onClick={toggleMenu}
+        className="text-white bg-blue-600 fixed bottom-8 right-5 p-2 text-lg rounded-full"
+      >
+        {showMenu ? <RiCloseLine /> : <RiMenuFill />}
+      </button>
     </div>
   );
 }
