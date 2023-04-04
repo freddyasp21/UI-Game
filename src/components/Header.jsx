@@ -3,7 +3,7 @@ import { RiNotification2Fill, RiSearchLine } from "react-icons/ri";
 
 function Header() {
   return (
-    <header className="bg-[#141414] fixed lg:pl-[340px] w-full text-white flex flex-col md:flex-row items-center justify-between p-8 gap-4">
+    <header className="bg-[#141414] fixed lg:pl-[280px] w-full text-white flex flex-col md:flex-row items-center justify-between p-8 gap-4">
       <nav className="flex items-center gap-4 order-1 lg:order-none">
         <a className="bg-blue-600 px-4 py-2 rounded-full hover:cursor-pointer">
           Discover

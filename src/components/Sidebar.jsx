@@ -22,7 +22,7 @@ function Sidebar() {
   return (
     // Contenedor padre
     <div
-      className={`fixed top-0 w-80 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between bg-[#141414] transition-all z-50 lg:left-0 ${
+      className={`fixed top-0 w-75 h-full overflow-y-scroll border border-gray-800 p-8 flex flex-col justify-between bg-[#141414] transition-all z-50 lg:left-0 ${
         showMenu ? "left-0" : "-left-full"
       }`}
     >
