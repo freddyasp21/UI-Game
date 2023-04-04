@@ -26,8 +26,8 @@ function Hero() {
         </div>
         <div className="bg-[#232323] col-span-1 h-[500px] lg:rounded-tr-xl lg:rounded-br-xl w-full">
           <ul className="p-2 box-border flex flex-col md:items-center lg:items-start gap-4 h-full overflow-y-scroll">
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/12/elder-scrolls-v-skyrim-anniversary-edition-caratula-2551097.jpeg?itok=f7Xn_a1n"
                   alt=""
@@ -36,8 +36,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Skyrim</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://i.blogs.es/b25956/doom-eternal/1366_2000.jpeg"
                   alt=""
@@ -46,8 +46,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Doom Eternal</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://media.vandal.net/i/1440x1080/2-2023/202325138222_1.jpg"
                   alt=""
@@ -56,8 +56,8 @@ function Hero() {
                 <span className="md:hidden lg:block">RE4</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://www.somosxbox.com/wp-content/uploads/2014/08/Dead-Island-2-header.jpg"
                   alt=""
@@ -66,8 +66,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Dead Island 2</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://i.blogs.es/27b361/death-stranding-01/840_560.jpeg"
                   alt=""
@@ -76,8 +76,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Death Stranding</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DyingLight2StayHuman_Techland_S3_2560x1440-f1dcd15207f091674615ccb4bd9dc3c7"
                   alt=""
@@ -86,8 +86,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Dying Light 2</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://sm.ign.com/t/ign_es/screenshot/default/atomic-heart-analisis_5ryu.1200.jpg"
                   alt=""
@@ -96,8 +96,8 @@ function Hero() {
                 <span className="md:hidden lg:block">Atomic Heart</span>
               </a>
             </li>
-            <li className="">
-              <a className="flex items-center gap-2 text-lg lg:text-sm hover:bg-[#141414] transition-all">
+            <li className="hover:bg-[#141414] w-full cursor-pointer">
+              <a className="flex items-center gap-2 text-lg lg:text-sm transition-all">
                 <img
                   src="https://media.vandal.net/i/1200x630/4-2023/20234314472621_1.jpg"
                   alt=""
